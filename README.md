@@ -23,7 +23,7 @@ In this project you will build out a application to show the NASA photo of the d
 
 ## Instructions
 
-### Task 1: Project Set Up
+### Task 1: Project Set Up`
 
 This project was put together using create-react-app (CRA). You will not need to install CRA in order to make this project work. Follow the steps below to setup the project with the proper dependencies.
 

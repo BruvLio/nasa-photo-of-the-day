@@ -1,13 +1,26 @@
 import React from 'react';
+import styled from 'styled-components'
+
+const NasaPhotoWrapper = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+
+`
+
+
 
 const NasaPhoto = (props) => {
+
+    const { photo:{title, date, hdurl, explanation}} = props
+
     return (
-        <div className= "nasa-photo-wrapper">
-            <h3>{props.photo.title}</h3>
-            <p>{props.photo.date}</p>
-            <img src={props.photo.hdurl} alt=""/>
-            <p className='explanation'>{props.photo.explanation}</p>
-        </div>
+        <NasaPhotoWrapper>
+            <h3>{title}</h3>
+            <p>{date}</p>
+            <img src={hdurl} alt=""/>
+            <p className='explanation'>{explanation}</p>
+        </NasaPhotoWrapper>
     )
 }
 

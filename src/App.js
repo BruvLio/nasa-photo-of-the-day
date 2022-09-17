@@ -5,7 +5,6 @@ import "./App.css";
 
 import NasaPhoto from './Components/NasaPhoto'
 
-
 function App() {
   const [data, setData] = useState();
 
